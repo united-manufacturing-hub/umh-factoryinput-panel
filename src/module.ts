@@ -33,6 +33,12 @@ export const plugin = new PanelPlugin<ButtonPanelOptions>(ButtonPanel).setPanelO
         category: ['REST Integration'],
         description: 'Value',
       })
+      .addTextInput({
+        path: 'username',
+        name: 'Customer',
+        category: ['REST Integration'],
+        description: 'Customer',
+      })
     .addCustomEditor({
       id: 'payload',
       path: 'payload',
