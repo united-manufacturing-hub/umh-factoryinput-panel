@@ -98,6 +98,7 @@ export class ButtonPanel extends PureComponent<Props, ButtonPanelState> {
     requestHeaders.set('Accept', 'application/json');
 
     let fetchOpts: RequestInit = {
+      credentials: 'include',
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
       mode: 'cors', // no-cors, *cors, same-origin
       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
